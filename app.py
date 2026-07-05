@@ -5,7 +5,7 @@ import numpy as np
 
 # Load model and preprocessing components
 model = joblib.load("Price_predictor_model")
-encoding_maps = joblib.load("encoding_maps")
+encoding_maps = joblib.load("encoding_maps.pkl")
 scaler = joblib.load("feature_scaler")
 
 st.set_page_config(page_title="Laptop Price Predictor", page_icon="💻", layout="centered")
